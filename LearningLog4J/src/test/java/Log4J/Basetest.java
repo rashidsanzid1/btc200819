@@ -9,9 +9,12 @@ public class Basetest {
 	
 	Logger log = Logger.getLogger(Basetest.class);
 	
+	
+	
 	@Before
 	public void start() {
 		DOMConfigurator.configure("log4j.xml");
+		log.info("any Commit");
 	}
 	
 	@Test
